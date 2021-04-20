@@ -21,6 +21,7 @@ public class MonAn implements Serializable{
 	private String urlHinhAnh;
 	private String donViTinh;
 	private long donGia;
+	private String trangThai;
 	@OneToMany(mappedBy = "monAn")
 	private List<ChiTietHoaDon> listChiTietHoaDon;
 	
