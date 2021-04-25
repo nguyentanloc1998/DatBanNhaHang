@@ -18,7 +18,7 @@ public class MonAn implements Serializable{
 	@Id
 	private String maMonAn;
 	private String tenMonAn;
-	private String urlHinhAnh;
+	private byte urlHinhAnh;
 	private String donViTinh;
 	private long donGia;
 	private String trangThai;

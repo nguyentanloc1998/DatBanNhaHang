@@ -14,7 +14,7 @@ public class Ban implements Serializable{
 	@Id
 	private String maBan;
 	private String tenBan;
-	private int soNguoi;
+	private int soChoNgoi;
 	private String trangThai;
 	
 	@ManyToOne
@@ -23,6 +23,11 @@ public class Ban implements Serializable{
 	
 	@OneToMany(mappedBy = "ban")
 	private List<HoaDon> listHoaDon;
+	
+	@OneToMany(mappedBy = "ban")
+	private List<ChiTietDatBan> listChiTietDatBan;
+	
+	
 	
 	public Ban() {
 		// TODO Auto-generated constructor stub

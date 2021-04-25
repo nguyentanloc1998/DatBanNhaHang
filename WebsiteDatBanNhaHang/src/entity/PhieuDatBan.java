@@ -31,6 +31,12 @@ public class PhieuDatBan implements Serializable {
 	@JoinColumn(name="maMonAn")
 	private MonAn monAn;
 	
+	@OneToMany(mappedBy = "phieuDatBan")
+	private List<ChiTietDatBan>  listChiTietDatBan;
+	
+	
+	
+	
 	public PhieuDatBan() {
 		// TODO Auto-generated constructor stub
 	}

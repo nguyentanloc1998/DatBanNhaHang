@@ -13,6 +13,8 @@
 		<class>entity.Ban</class>
 		<class>entity.KhuVuc</class>
 		<class>entity.PhieuDatBan</class>
+		<class>entity.ChiTietDatBan</class>
+		<class>entity.ChiTietDatBanPK</class>
 		
 		<properties>
             <property name="javax.persistence.jdbc.driver" 

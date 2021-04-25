@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="css/mainmenu.css">
     <link rel="stylesheet" href="css/responsivemenu.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
+<!-- Dang Nhap CSS -->
+	<link rel="stylesheet" href="css/dangnhap.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -68,14 +69,9 @@
 								<a class="dropdown-item" href="gallery.html">Danh Mục</a>
 							</div>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="blog.html">blog</a>
-								<a class="dropdown-item" href="blog-details.html">blog Single</a>
-							</div>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+						
+						<li class="nav-item"><a class="nav-link" href="contact.html">Địa Chỉ</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#bd-example-modal-xl">Tài Khoản</a></li>
 					</ul>
 				</div>
 			</div>
@@ -100,7 +96,7 @@
 				<div class="row">
 					<div class="col-md-4 clearfix">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="images/logo.png" alt="" /></a>
+							<a href="index.html"><img src="images/logochonmon.jpg" alt="" /></a>
 						</div>
 						
 					</div>
@@ -115,32 +111,6 @@
 			</div>
 		</div><!--/header-middle-->
 	
-		<div class="header-bottom"><!--header-bottom-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-8">
-						<div class="mainmenu pull-left">
-							
-								<a href="#" class="btn btn-success btn-shadow font-weight-bold mr-2">Quay lại</a>
-								
-							
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Tìm Kiếm"/>
-						</div>
-					</div>
-				</div>
-				</div>
-			</div>
-	</header>
-	
-	<section id="advertisement">
-		<div class="container">
-			<img src="images/shop/advertisement.jpg" alt="" />
-		</div>
-	</section>
 	
 	<section>
 		<div class="container">
@@ -160,7 +130,7 @@
 						
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="images/shop/product12.jpg" alt=""></a>
+								<a href=""><img id="hinhanh" src="images/monchinh.jpg" alt=""></a>
 							</td>
 							<td class="cart_description">
 								<h4><a href="">Hamberger</a></h4>
@@ -186,7 +156,8 @@
 					</tbody>
 				</table>
 			
-		</div>
+			</div>
+		</div>	
 	</section>
 	
 	<!-- Start thanh toan -->
@@ -252,6 +223,85 @@
 		</div>
 	</div>
 	<!-- End Contact info -->
+	<!-- Cửa Sổ Đăng Nhập -->
+  	<div class="modal fade bd-example-modal-xl" id="bd-example-modal-xl"  role="dialog"  aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+       <div class="modal-header">
+                <h5 class="modal-title">Tài Khoản</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+            <div class="login-wrap">
+    			<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">ĐĂNG NHẬP</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">ĐĂNG KÝ</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">TÊN TÀI KHOẢN</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">MẬT KHẨU</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Ghi nhớ Đăng Nhập</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="ĐĂNG NHẬP">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Quên mật khẩu?</a>
+				</div>
+			</div>
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">TÊN TÀI KHOẢN</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">MẬT KHẨU</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">NHẬP LẠI MẬT KHẨU</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">HỌ TÊN</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">SỐ ĐIỆN THOẠI</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">ĐỊA CHỈ EMAIL</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				
+				<div class="group">
+					<input type="submit" class="button" value="ĐĂNG KÝ">
+				</div>
+				
+				
+						</div>
+					</div>
+				</div>
+				</div>
+          			  </div>
+    	     
+    </div>
+  </div>
+</div>
+    <!-- kết thúc Cửa Sổ -->
 	
 	<!-- Start Footer -->
 	<footer class="footer-area bg-f">

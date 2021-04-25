@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-
+    <!-- Dang Nhap CSS -->
+	<link rel="stylesheet" href="css/dangnhap.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -59,7 +60,7 @@
 						</li>
 						
 						<li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
-						<li class="nav-item"><a class="nav-link" href="dangnhap.html">Tài Khoản</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#bd-example-modal-xl">Tài Khoản</a></li>
 					</ul>
 				</div>
 			</div>
@@ -168,10 +169,11 @@
 			<div class="row inner-menu-box">
 				<div class="col-3">
 					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-						<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Tất Cả</a>
-						<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Nước Uống</a>
-						<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bữa Sáng</</a>
-						<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bữa Tối</a>
+						<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Tất Cả</a>			
+						<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-khaivi" role="tab" aria-controls="v-pills-messages" aria-selected="false">Khai Vị</a>
+						<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-monchinh" role="tab" aria-controls="v-pills-settings" aria-selected="false">Món Chính</a>
+						<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-trangmieng" role="tab" aria-controls="v-pills-settings" aria-selected="false">Tráng Miệng</a>
+						<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-nuocuong" role="tab" aria-controls="v-pills-profile" aria-selected="false">Nước Uống</a>
 					</div>
 				</div>
 				
@@ -181,10 +183,10 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="images/img-01.jpg" class="img-fluid" alt="Image">
+										<img src="images/khaivi.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Mojito</h4>
-											<p>Mojito là thức uống Highball truyền thống của Cuba</p>
+											<h4>Khai Vị 5 Món</h4>
+											<p>Gồm có Tôm, Chà giò, Thịt nguội.</p>
 											<h5>100.000 VNĐ</h5>
 										</div>
 									</div>
@@ -192,10 +194,10 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="images/img-02.jpg" class="img-fluid" alt="Image">
+										<img src="images/khaivi1.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Cosmopolitan</h4>
-											<p>Cosmopolitan hay còn gọi là cosmo là loại cocktail được làm bằng vodka</p>
+											<h4>Chả Giò</h4>
+											<p>Gồm có Thịt, Bánh tráng, Rau củ...</p>
 											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
@@ -203,192 +205,388 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="images/img-03.jpg" class="img-fluid" alt="Image">
+										<img src="images/khaivi2.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Drinks 3</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $10.79</h5>
+											<h4>Bò Xào</h4>
+											<p>Gồm có Thịt bò, Hành, Bánh phồng tôm.</p>
+											<h5>100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
 								
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="images/img-04.jpg" class="img-fluid" alt="Image">
+										<img src="images/khaivi44.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Lunch 1</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $15.79</h5>
+											<h4>Súp Cua</h4>
+											<p>Gồm có Tôm, Thịt Cua, Trứng.</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
 								
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="images/img-05.jpg" class="img-fluid" alt="Image">
+										<img src="images/khaivi4.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Lunch 2</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $18.79</h5>
+											<h4>Khai Vị 4 Món</h4>
+											<p>Gồm có Chả giò, Mực chiên giòn, Chả lụi, Gỏi ngó sen.</p>
+											<h5>100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
 								
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="images/img-06.jpg" class="img-fluid" alt="Image">
+										<img src="images/monchinh.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Lunch 3</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $20.79</h5>
+											<h4>Thịt Xào Chua Ngọt</h4>
+											<p>Gồm có thịt, Cà chua, Thơm...</p>
+											<h5>100.000 VNĐ </h5>
 										</div>
 									</div>
 								</div>
 								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="images/img-07.jpg" class="img-fluid" alt="Image">
+										<img src="images/monchinh1.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Dinner 1</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $25.79</h5>
+											<h4>Sườn Cừu Xông Khói</h4>
+											<p>Gồm có sườn non cừu...</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
 								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="images/img-08.jpg" class="img-fluid" alt="Image">
+										<img src="images/monchinh2.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Dinner 2</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $22.79</h5>
+											<h4>Mì Thịt Nướng</h4>
+											<p>Gồm có Mì và Thịt nướng.</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
 								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="images/img-09.jpg" class="img-fluid" alt="Image">
+										<img src="images/monchinh3.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Dinner 3</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $24.79</h5>
+											<h4>Beef Steak</h4>
+											<p>Gồm thịt bò, Rau củ.</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
-							</div>
-							
-						</div>
-						<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-							<div class="row">
-								<div class="col-lg-4 col-md-6 special-grid drinks">
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/monchinh4.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Cá Hấp Xả </h4>
+											<p>Gồm cá và rau củ .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/trangmieng.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/trangmieng1.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/trangmieng2.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/trangmieng3.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/trangmieng4.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
 										<img src="images/img-01.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Drinks 1</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $7.79</h5>
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
-								
-								<div class="col-lg-4 col-md-6 special-grid drinks">
+								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
 										<img src="images/img-02.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Drinks 2</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $9.79</h5>
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/img-03.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>		
+																
+							</div>							
+						</div>
+						<div class="tab-pane fade" id="v-khaivi" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+							<div class="row">
+								<div class="col-lg-4 col-md-6 special-grid drinks">
+									<div class="gallery-single fix">
+										<img src="images/khaivi.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Khai Vị 5 Món</h4>
+											<p>Gồm có Tôm, Chà giò, Thịt nguội.</p>
+											<h5>100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
 								
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="images/img-03.jpg" class="img-fluid" alt="Image">
+										<img src="images/khaivi1.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Drinks 3</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $10.79</h5>
+											<h4>Chả Giò</h4>
+											<p>Gồm có Thịt, Bánh tráng, Rau củ...</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid drinks">
+									<div class="gallery-single fix">
+										<img src="images/khaivi2.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Bò Xào</h4>
+											<p>Gồm có Thịt bò, Hành, Bánh phồng tôm.</p>
+											<h5>100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="gallery-single fix">
+										<img src="images/khaivi44.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Súp Cua</h4>
+											<p>Gồm có Tôm, Thịt Cua, Trứng.</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="gallery-single fix">
+										<img src="images/khaivi4.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Khai Vị 4 Món</h4>
+											<p>Gồm có Chả giò, Mực chiên giòn, Chả lụi, Gỏi ngó sen.</p>
+											<h5>100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								
+								
+								
 							</div>
 							
 						</div>
-						<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+						<div class="tab-pane fade" id="v-monchinh" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 							<div class="row">
-								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="images/img-04.jpg" class="img-fluid" alt="Image">
+										<img src="images/monchinh.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Lunch 1</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $15.79</h5>
+											<h4>Thịt Xào Chua Ngọt</h4>
+											<p>Gồm có thịt, Cà chua, Thơm...</p>
+											<h5>100.000 VNĐ </h5>
 										</div>
 									</div>
 								</div>
 								
-								<div class="col-lg-4 col-md-6 special-grid lunch">
+								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="images/img-05.jpg" class="img-fluid" alt="Image">
+										<img src="images/monchinh1.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Lunch 2</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $18.79</h5>
+											<h4>Sườn Cừu Xông Khói</h4>
+											<p>Gồm có sườn non cừu...</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
 								
-								<div class="col-lg-4 col-md-6 special-grid lunch">
+								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="images/img-06.jpg" class="img-fluid" alt="Image">
+										<img src="images/monchinh2.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Lunch 3</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $20.79</h5>
+											<h4>Mì Thịt Nướng</h4>
+											<p>Gồm có Mì và Thịt nướng.</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/monchinh3.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Beef Steak</h4>
+											<p>Gồm thịt bò, Rau củ.</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/monchinh4.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Cá Hấp Xả </h4>
+											<p>Gồm cá và rau củ .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								
+								
 							</div>
 						</div>
-						<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+						<div class="tab-pane fade" id="v-trangmieng" role="tabpanel" aria-labelledby="v-pills-settings-tab">
 							<div class="row">
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="images/img-07.jpg" class="img-fluid" alt="Image">
+										<img src="images/trangmieng.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Dinner 1</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $25.79</h5>
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
-								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="images/img-08.jpg" class="img-fluid" alt="Image">
+										<img src="images/trangmieng1.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Dinner 2</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $22.79</h5>
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
-								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="images/img-09.jpg" class="img-fluid" alt="Image">
+										<img src="images/trangmieng2.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Special Dinner 3</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5> $24.79</h5>
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
 										</div>
 									</div>
 								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/trangmieng3.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/trangmieng4.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>							
+				
 							</div>
 						</div>
+					
+					<div class="tab-pane fade" id="v-nuocuong" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+							<div class="row">
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/img-01.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/img-02.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="images/img-03.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4> Bánh Ngọt </h4>
+											<p>Trứng gà và sửa .</p>
+											<h5> 100.000 VNĐ</h5>
+										</div>
+									</div>
+								</div>		
+							</div>
+						</div>
+					
+					
+					
 					</div>
 				</div>
 			</div>
@@ -396,6 +594,88 @@
 		</div>
 	</div>
 	<!-- End Menu -->
+	
+	
+	
+  <!-- Cửa Sổ Đăng Nhập -->
+  	<div class="modal fade bd-example-modal-xl" id="bd-example-modal-xl"  role="dialog"  aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+       <div class="modal-header">
+                <h5 class="modal-title">Tài Khoản</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+            <div class="login-wrap">
+    			<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">ĐĂNG NHẬP</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">ĐĂNG KÝ</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">TÊN TÀI KHOẢN</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">MẬT KHẨU</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Ghi nhớ Đăng Nhập</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="ĐĂNG NHẬP">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Quên mật khẩu?</a>
+				</div>
+			</div>
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">TÊN TÀI KHOẢN</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">MẬT KHẨU</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">NHẬP LẠI MẬT KHẨU</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">HỌ TÊN</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">SỐ ĐIỆN THOẠI</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">ĐỊA CHỈ EMAIL</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				
+				<div class="group">
+					<input type="submit" class="button" value="ĐĂNG KÝ">
+				</div>
+				
+				
+						</div>
+					</div>
+				</div>
+				</div>
+          			  </div>
+    	     
+    </div>
+  </div>
+</div>
+    <!-- kết thúc Cửa Sổ -->
 	
 	<!-- Start Gallery -->
 	<div class="gallery-box">
