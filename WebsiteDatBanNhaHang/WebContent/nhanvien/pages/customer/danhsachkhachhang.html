@@ -98,9 +98,9 @@
 			</a>
 				<ul id="product" class="collapse" aria-labelledby="product"
 					data-parent="#side-nav-accordion">
-					<li><a href="../product/productlist.html">Danh Sách Món Ăn</a></li>
-					<li><a href="../product/addproduct.html">Thêm Món Ăn</a></li>
-					<li><a href="../product/productdetail.html">Chi Tiêt Món Ăn</a></li>
+					<li><a href="productlist.html">Danh Sách Món Ăn</a></li>
+					<li><a href="addproduct.html">Thêm Món Ăn</a></li>
+					<li><a href="productdetail.html">Chi Tiêt Món Ăn</a></li>
 
 				</ul></li>
 			<!-- product end -->
@@ -110,12 +110,12 @@
 						class="fas fa-clipboard-list fs-16"></i>Phiếu Đặt Bàn</span>
 			</a></li>
 			<!-- orders end -->
-			 <!-- Invoice -->
+			<!-- Invoice -->
       <li class="menu-item">
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#invoice" aria-expanded="false" aria-controls="invoice"> <span><i class="fas fa-file-invoice fs-16"></i>Hóa Đơn </span>
         </a>
         <ul id="invoice" class="collapse" aria-labelledby="invoice" data-parent="#side-nav-accordion">
-           <li> <a href="../invoice/invoicelist.html">Danh Sách Hóa Đơn</a> 
+          <li> <a href="../invoice/invoicelist.html">Danh Sách Hóa Đơn</a> 
           </li>
          
         </ul>
@@ -131,27 +131,28 @@
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages"> <span><i class="material-icons fs-16">insert_drive_file</i>Quản Lý Bàn</span>
         </a>
         <ul id="pages" class="collapse" aria-labelledby="pages" data-parent="#side-nav-accordion">
-          <li class="menu-item"> <a href="danhsachban.html"> Danh Sách Bàn </a>
+          <li class="menu-item"> <a href="../ban/danhsachban.html"> Danh Sách Bàn </a>
           	
-					<li class="menu-item"><a href="themban.html">
+					<li class="menu-item"><a href="../ban/themban.html">
 							Thêm Bàn Mới </a></li>
-					<li class="menu-item"><a href="chitietban.html">
+					<li class="menu-item"><a href="../ban/chitietban.html">
 							Chi Tiết Bàn </a></li>
           
           </li>
         </ul>
       </li>
       <!-- /Pages -->
+      
        <!-- Khach Hang -->
       <li class="menu-item">
         <a href="#" class="has-chevron collapsed" data-toggle="collapse" data-target="#customer" aria-expanded="false" aria-controls="customer"> <span><i class="fas fa-user-friends fs-16"></i>Khách Hàng </span>
         </a>
         <ul id="customer" class="collapse" aria-labelledby="customer" data-parent="#side-nav-accordion" style="">
-          <li> <a href="../customer/danhsachkhachhang.html">Danh Sách Khách Hàng</a>
+          <li> <a href="danhsachkhachhang.html">Danh Sách Khách Hàng</a>
           </li>
-          <li> <a href="../customer/themkhachhang.html">Thêm Khách Hàng</a>
+          <li> <a href="themkhachhang.html">Thêm Khách Hàng</a>
           </li>
-          <li> <a href="../customer/chitietkhachhang.html">Chi Tiêt Khách Hàng</a>
+          <li> <a href="chitietkhachhang.html">Chi Tiêt Khách Hàng</a>
           </li>
         </ul>
       </li>
@@ -451,9 +452,9 @@
 						<ol class="breadcrumb pl-0">
 							<li class="breadcrumb-item"><a href="#"><i
 									class="material-icons">home</i> Trang Chủ</a></li>
-							<li class="breadcrumb-item"><a href="#">Quản Lý Bàn</a></li>
+							<li class="breadcrumb-item"><a href="#">Khách Hàng</a></li>
 							<li class="breadcrumb-item active" aria-current="page">Danh
-								Sách Bàn</li>
+								Sách Khách Hàng</li>
 						</ol>
 					</nav>
 
@@ -463,7 +464,7 @@
 
 					<div class="">
 						<div class="ms-panel-header">
-							<h6>Danh Sách Bàn</h6>
+							<h6>Danh Sách Khách Hàng</h6>
 						</div>
 						<div class="ms-panel-body">
 							<div class="table-responsive">
@@ -472,21 +473,14 @@
 									<div class="row">
 										<div class="col-sm-12 col-md-6">
 											<div class="dataTables_length" id="data-table-5_length">
-												<label>Khu Vực <select name="data-table-5_length"
-													aria-controls="data-table-5"
-													class="custom-select custom-select-sm form-control form-control-sm">
-														<option value="Tầng 1">Tầng 1</option>
-														<option value="Tầng 2">Tầng 2</option>
 												
-												</select>
-												</label>
 											</div>
 										</div>
 										<div class="col-sm-12 col-md-6">
 											<div id="data-table-5_filter" class="dataTables_filter">
 												<label><input type="search"
 													class="form-control form-control-sm"
-													placeholder="Tìm Kiếm Bàn" aria-controls="data-table-5"></label>
+													placeholder="Tìm Kiếm Món Ăn..." aria-controls="data-table-5"></label>
 											</div>
 										</div>
 									</div>
@@ -502,20 +496,23 @@
 															aria-controls="data-table-5" rowspan="1" colspan="1"
 															aria-sort="ascending"
 															aria-label="Product ID: activate to sort column descending"
-															style="width: 62px;">STT</th>
+															style="width: 62px;">ID Khách Hàng</th>
 														<th class="sorting" tabindex="0"
 															aria-controls="data-table-5" rowspan="1" colspan="1"
 															aria-label="Product Name: activate to sort column ascending"
-															style="width: 140px;">Tên Bàn</th>
+															style="width: 80px;">Tên Khách Hàng</th>
 														<th class="sorting" tabindex="0"
 															aria-controls="data-table-5" rowspan="1" colspan="1"
 															aria-label="Quantity: activate to sort column ascending"
-															style="width: 54px;">Số Người</th>
+															style="width: 54px;">Số Điện Thoại</th>
 														<th class="sorting" tabindex="0"
 															aria-controls="data-table-5" rowspan="1" colspan="1"
 															aria-label="Status: activate to sort column ascending"
-															style="width: 56px;">Trạng Thái</th>
-														
+															style="width: 140px;">Địa Chỉ</th>
+														<th class="sorting" tabindex="0"
+															aria-controls="data-table-5" rowspan="1" colspan="1"
+															aria-label="Price: activate to sort column ascending"
+															style="width: 140px;">Email</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -525,27 +522,10 @@
 															src="../../assets/img/costic/french-fries.jpg"
 															style="width: 50px; height: 30px;">French Fries</td>
 														<td>Món Chính</td>
-														<td><span class="badge badge-dark">Đang Ăn</span></td>
-														
+														<td>Dĩa</td>
+														<td>$47</td>
 													</tr>
-													<tr role="row" class="even">
-														<td class="sorting_1">02351</td>
-														<td><img src="../../assets/img/costic/pizza.jpg"
-															style="width: 50px; height: 30px;">French Crostini</td>
-														<td>Món Chính</td>
-														<td><span class="badge badge-primary">Đã Đặt</span></td>
-														
-													</tr>
-													<tr role="row" class="even">
-														<td class="sorting_1">02351</td>
-														<td><img src="../../assets/img/costic/pizza.jpg"
-															style="width: 50px; height: 30px;">French Crostini</td>
-														<td>Món Chính</td>
-														<td><span class="badge badge-success">Bàn Trống</span></td>
-														
-													</tr>
-													
-													
+															
 												</tbody>
 											</table>
 										</div>
