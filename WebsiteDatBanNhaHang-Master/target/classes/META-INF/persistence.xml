@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="WebsiteDatBanNhaHang">
+	
+		<class>entity.ChiTietDatMonAn</class>
+		<class>entity.ChiTietDatMonAnPK</class>
+		<class>entity.HoaDon</class>
+		<class>entity.MonAn</class>
+		<class>entity.TaiKhoan</class>
+		<class>entity.NguoiDung</class>
+		<class>entity.LoaiMonAn</class>
+		<class>entity.Ban</class>
+		<class>entity.KhuVuc</class>
+		<class>entity.PhieuDatBan</class>
+		<class>entity.ChiTietDatBan</class>
+		<class>entity.ChiTietDatBanPK</class>
+		<class>entity.ThoiGianDatBan</class>
+		
+		<properties>
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.SQLServerDialect" />
+			<property name="hibernate.connection.url"
+				value="jdbc:sqlserver://localhost:1433;databaseName=WebsiteDatBan" />
+			<property name="hibernate.connection.driver_class"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="hibernate.connection.username" value="sa" />
+			<property name="hibernate.connection.password"
+				value="loc123" />
+			<property name="hibernate.connection.useUnicode"
+				value="true" />
+			<property name="hibernate.connection.characterEncoding"
+				value="UTF-8" />
+			<property name="hibernate.connection.charSet" value="UTF-8" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="false" />
+		</properties>
+	</persistence-unit>
+	
+</persistence>
